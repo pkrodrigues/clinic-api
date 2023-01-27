@@ -23,9 +23,9 @@ public class ConsultaDTO {
     private String procedimento;
     @DateTimeFormat(pattern = "dd/MM/yyyy")
     private Date dataConsulta;
+    @DateTimeFormat(pattern = "HH:mm:ss")
     private Date horario;
-    @DateTimeFormat(pattern = "dd/MM/yyyy")
-    private String Observacao;
+    private String observacao;
     private String convenio;
     private double valor;
     private double valorTotal;

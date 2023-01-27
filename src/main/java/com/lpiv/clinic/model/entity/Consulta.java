@@ -28,7 +28,7 @@ public class Consulta {
     private String procedimento;
     private Date dataConsulta;
     private Date horario;
-    private String Observacao;
+    private String observacao;
     private String convenio;
     private double valor;
     private double valorTotal;

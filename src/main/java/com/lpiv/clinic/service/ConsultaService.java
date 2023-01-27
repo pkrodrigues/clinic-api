@@ -30,12 +30,12 @@ public class ConsultaService {
     }
 
     public void validar(Consulta consulta) {
-      if (consulta.getPaciente().getNome() == null || consulta.getPaciente().getNome().trim().equals("")){
-          throw new RegraNegocioException("Nome inválido");
-      }
-      if (consulta.getMedico().getNome() == null || consulta.getMedico().getNome().trim().equals("")){
-            throw new RegraNegocioException("Nome inválido");
-      }
+    //   if (consulta.getPaciente().getNome() == null || consulta.getPaciente().getNome().trim().equals("")){
+    //       throw new RegraNegocioException("Nome inválido");
+    //   }
+    //   if (consulta.getMedico().getNome() == null || consulta.getMedico().getNome().trim().equals("")){
+    //         throw new RegraNegocioException("Nome inválido");
+    //   }
       if (consulta.getDataConsulta() == null){
             throw new RegraNegocioException("Data inválida");
       }

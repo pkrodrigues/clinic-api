@@ -25,7 +25,7 @@ public class MedicoDTO {
     @DateTimeFormat(pattern="dd/MM/yyyy")
     private  Date dataSaida;
     private double salario;
-    private int crm;
+    private String crm;
     private String cpf;
     private String especialidade;
     private String cidade;

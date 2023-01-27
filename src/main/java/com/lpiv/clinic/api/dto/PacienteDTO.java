@@ -17,7 +17,7 @@ import java.util.Date;
 public class PacienteDTO {
     private Long idPaciente;
     private String nome;
-    @DateTimeFormat(pattern="dd/MM/yyyy")
+    @DateTimeFormat(pattern="dd/MM/YYYY")
     private Date dataNasc;
     private String rg;
     private String cpf;
@@ -31,12 +31,10 @@ public class PacienteDTO {
     private String complemento;
     private String bairro;
     private String cidade;
-    private Long idConvenio;
 
     public static PacienteDTO create(Paciente paciente){
         ModelMapper modelMapper = new ModelMapper();
         PacienteDTO dto = modelMapper.map(paciente, PacienteDTO.class);
-        dto.getIdConvenio();
         return dto;
     }
 }
