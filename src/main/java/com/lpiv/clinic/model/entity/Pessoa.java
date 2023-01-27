@@ -1,15 +1,17 @@
 package com.lpiv.clinic.model.entity;
 
+import java.util.Date;
+
 import jakarta.persistence.MappedSuperclass;
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.Getter;
+
 
 
 
 @MappedSuperclass
-@Getter
-@S
+@AllArgsConstructor
+@Data
 
 public abstract class Pessoa {
     private String nome;
