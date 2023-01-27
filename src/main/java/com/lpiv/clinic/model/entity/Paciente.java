@@ -10,10 +10,10 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
 @ToString
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Paciente extends Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

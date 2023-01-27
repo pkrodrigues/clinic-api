@@ -5,12 +5,14 @@ import java.util.Date;
 import jakarta.persistence.MappedSuperclass;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 
 
 
 @MappedSuperclass
 @AllArgsConstructor
+@NoArgsConstructor
 @Data
 
 public abstract class Pessoa {
