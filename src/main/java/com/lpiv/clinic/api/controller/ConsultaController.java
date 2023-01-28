@@ -63,7 +63,7 @@ public class ConsultaController {
     @PostMapping()
     @ApiOperation("Salva um novo consulta")
     @ApiResponses({
-            @ApiResponse(code = 201, message = "Convênio salvo com sucesso"),
+            @ApiResponse(code = 201, message = "Consulta inserida com sucesso"),
             @ApiResponse(code = 400, message = "Erro ao salvar o consulta")
     })
     public ResponseEntity post(ConsultaDTO dto) {
